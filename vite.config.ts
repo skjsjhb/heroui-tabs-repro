@@ -4,6 +4,7 @@ import type { UserConfig } from "vite";
 
 export default {
     plugins: [react()],
+    base: "",
     css: {
         postcss: {
             plugins: [tailwindcss()]
