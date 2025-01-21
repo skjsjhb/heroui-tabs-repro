@@ -17,8 +17,8 @@ const Main = () => {
     const [, nav] = useLocation();
 
     return <HeroUIProvider navigate={(h) => {
-        nav(h);
         alert("Navigate function called.")
+        nav(h);
     }}>
         <div className="flex flex-col gap-2">
             Tabs:
